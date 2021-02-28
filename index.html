@@ -2,26 +2,48 @@
 <html lang="pt">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página oficial</title>
+    <title>Formulário</title>
 </head>
-<style>
-    body {
-        background-image: url(https://images5.alphacoders.com/589/589333.jpg);
-    }
-
-    h1,
-    p {
-        color: aliceblue;
-
-    }
-</style>
+</head>
 
 <body>
+<<<<<<< Updated upstream
     <h1>Bem vindos!</h1>
     <p>Essa é a minha Página.</p>
+=======
+    <form>
+        <form name="F_Aula" method="POST" action="">
+            <label>Nome:</label><br />
+            <input type="text" name="F_Nome" size="40" maxlength="40" /><br /><br />
+
+            <label>Senha:</label><br />
+            <Input type="password" name="F_Senha" size="40" maxlength="20" /><br /><br />
+            <label>Qual seu gênero de jogo preferido?</label><br />
+            <input type="checkbox" name="F_FPS" value="FPS" /><label>FPS</label><br />
+            <input type="checkbox" name="F_MOBA" value="MOBA" /><label>MOBA</label><br />
+            <input type="checkbox" name="F_RPG" value="RPG" /><label>RPG</label><br />
+            <input type="checkbox" name="F_MMO" value="MMO" /><label>MMO</label><br />
+            <input type="checkbox" name="F_RTS" value="RTS" /><label>RTS</label><br /><br />
+            <label> Possui algum console?</label><br />
+            <input type="radio" name="F_console" value="S" /><label>SIM</label><br />
+            <input type="radio" name="F_console" value="N" /><label>NÃO</label><br /><br />
+            <label>Possui um PC?</label><br />
+            <input type="radio" name="F_PC" value="S" /><label>SIM</label><br />
+            <input type="radio" name="F_PC" value="N" /><label>NÃO</label><br /><br />
+            <label>Em qual deles você mais joga?</label><br />
+            <input type="checkbox" name="F_CONSOLE" value="Console" /><label>Console</label><br />
+            <input type="checkbox" name="F_PC" value="PC" /><label>PC</label><br /><br />
+            <label>Cidade:</label><br />
+            <select name="F_Estado">
+                <option value="RS">Pelotas</option>
+                <option value="RS">Rio Grande</option>
+                <option value="RS">Porto Alegre</option>
+            </select><br /><br />
+            <label>Comentário</label><br />
+            <textarea name="F_comentário" cols="45" rows="5"></textarea><br /><br />
+            <input type="Submit" value="ENVIAR" />
+        </form>
+>>>>>>> Stashed changes
 
 </body>
 
