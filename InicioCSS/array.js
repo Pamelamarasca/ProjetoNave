@@ -1,5 +1,3 @@
-
-
 const colaboradores = [
     {
         name: 'Juca',
@@ -33,31 +31,32 @@ const colaboradores = [
     },
 ]
 
-const result = colaboradores.map(colaborador => {
-    return colaborador.name;
-});
-console.log(result);
-//filter -----------------
-const todosColaboradores = colaboradores.filter((colaborador) => {
-    return colaborador.cargo === "front-end";
-});
-
-console.log("Todos colaboradores:", todosColaboradores);
-
-//Find---------------------------------------------
-const idade = colaboradores.find(colaborador => {
-    return colaborador.idade > 23;
+//exercicio 1
+const desafio1 = colaboradores.map((colab, indice) => {
+    return colab.name
 })
-console.log(idade);
+console.log(desafio1)
 
-
-const menores = colaboradores.find(colaborador => {
-    return colaborador.idade < 18;
+//exercicio 2
+const desafio2 = colaboradores.filter(colab => {
+    return colab.cargo === 'front-end'
 })
-console.log(idade);
-//Some----------------------------4
-const existeEstagiario = colaboradores.some((colaborador) => {
-    return colaborador.cargo === "estagiario";
-});
+console.log(desafio2)
 
-console.log("existe algum estagiario?", existeEstagiario);
+//exercicio 3
+const desafio3 = colaboradores.find(colab => {
+    return colab.idade > 23
+})
+console.log(desafio3)
+
+//exercicio 4
+const desafio4 = colaboradores.filter(colab => {
+    return colab.idade > 18
+})
+console.log(desafio4)
+
+//exercicio 5
+const desafio5 = colaboradores.some(colab => {
+    return colab.cargo === 'estagiario'
+})
+console.log(desafio5)
