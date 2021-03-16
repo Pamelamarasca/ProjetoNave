@@ -60,3 +60,39 @@ const desafio5 = colaboradores.some(colab => {
     return colab.cargo === 'estagiario'
 })
 console.log(desafio5)
+
+
+//AULA 5------------
+const p1 = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(console.log("desafio p1 feito com sucesso"));
+        }, 3000);
+    }
+
+    )
+}
+
+const p2 = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(console.log("desafio p2 feito com sucesso"));
+        }, 3000);
+    }
+    )
+}
+//3
+
+async function pt3() {
+    try {
+        const exibi = await Promise.all([p1(), p2()]);
+        console.log(exibi)
+    } catch (error) {
+        console.log(error)
+    } finally {
+        console.log("Fim da execução")
+    }
+
+}
+
+pt3()
